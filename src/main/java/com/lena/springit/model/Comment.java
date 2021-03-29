@@ -13,7 +13,7 @@ import java.util.Objects;
 @Entity
 @NoArgsConstructor
 @Data
-public class Comment {
+public class Comment extends Auditable {
 
     @Id
     @GeneratedValue
@@ -22,6 +22,4 @@ public class Comment {
 
     @ManyToOne
     private Link link;
-
-
 }
